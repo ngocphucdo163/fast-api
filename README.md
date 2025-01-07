@@ -1,6 +1,9 @@
+Create .env file, need database credentials at .env
+
 Init
-pip install uvicorn
-source venv/bin/activate
+`pip install -r requirements.txt`
+
+`source venv/bin/activate`
 
 1/ Create a create_db.py file in your project directory.
 
@@ -17,3 +20,7 @@ print("Database schema created!")
 Run the script:
 
 `python init_db.py`
+
+2/ Run the FastAPI app:
+
+`uvicorn app.main:app --reload`
